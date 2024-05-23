@@ -17,10 +17,10 @@ export default {
     data() { 
         return {
             name: '',
-            email: '',
+            email: '', 
             password: ''
         };
-    },
+    },                         
     methods: {
         async signUp() {
             try {
