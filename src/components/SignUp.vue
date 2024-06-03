@@ -5,8 +5,10 @@
 <input type="text" v-model="name" placeholder="enter name">
 <input type="text" v-model="email" placeholder="enter Email">
 <input type="password" v-model="password" placeholder="enter Password">
-<button   v-on:click="signUp"> Sign Up</button>
-
+<button   v-on:click="signUp"> Sign Up</button><br>
+<router-link to="/Login">
+  Login
+</router-link>
 </div>
 </template>
 <script>

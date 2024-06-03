@@ -1,8 +1,14 @@
 <template>
-    <h1>Login Page</h1>
-    <input type="text" v-model="name" placeholder="enter name">
-    <input type="password" v-model="password" placeholder="enter Password">
-    <button v-on:click="login"> Login </button>
+      <img class="logo" alt="Vue logo" src="../assets/logo.png">
+<h1>Login</h1>
+<div class="login">
+<input type="text" v-model="name" placeholder="enter name">
+<input type="password" v-model="password" placeholder="enter Password">
+<button   v-on:click="signUp"> Login</button><br>
+<router-link to="/sign-up">
+  Sign up
+</router-link>
+</div>
 </template>
 <script>
 import axios from 'axios';
@@ -38,3 +44,38 @@ export default {
 }
 
 </script>
+
+<style>
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.login input{
+    
+     width: 300px;
+     height: 40px;
+     padding-left: 20px;
+     display: block;
+     margin-bottom: 30px;
+     margin-right: auto;
+     margin-left: auto;
+     border: 1px solid black;
+}
+.login button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 320px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+</style>
